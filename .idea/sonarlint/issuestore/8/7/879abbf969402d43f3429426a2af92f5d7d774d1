@@ -1,0 +1,17 @@
+
+€
+java:S1488"cImmediately return this expression instead of assigning it to the temporary variable "responseStr".(¼«‡8•ÓÊ¸«1
+…
+java:S1488!"cImmediately return this expression instead of assigning it to the temporary variable "responseStr".(¸ÿ•÷üÿÿÿÿ8—ÓÊ¸«1
+}
+java:S14885"`Immediately return this expression instead of assigning it to the temporary variable "response".(ÑŒñ8—ÓÊ¸«1
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ë¢ñãûÿÿÿÿ8ğÛÍ¸«1
+l
+java:S1128"JRemove this unused import 'com.wy.music.common.config.RestTemplateConfig'.(µ®²ğùÿÿÿÿ8ÜºË¸«1
+c
+java:S1128"ARemove this unused import 'org.springframework.http.HttpHeaders'.(ãŸñ×úÿÿÿÿ8ÜºË¸«1
+b
+java:S1128"@Remove this unused import 'org.springframework.http.HttpMethod'.(Ê¨Ä¡øÿÿÿÿ8ÜºË¸«1
+_
+java:S1128"BRemove this unused import 'net.sourceforge.pinyin4j.PinyinHelper'.(‚®ÿì8ÜºË¸«1

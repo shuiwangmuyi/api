@@ -1,0 +1,5 @@
+
+y	java:S116"XRename this field "READ_TIME_OUT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÍ·Ñúÿÿÿÿ8ô—Ôÿ¤1
+|	java:S116"[Rename this field "CONNECT_TIME_OUT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú‹¨˜øÿÿÿÿ8ô—Ôÿ¤1
+g
+java:S1128"ERemove this unused import 'org.springframework.stereotype.Component'.(Þ÷Ñ¸ÿÿÿÿÿ8ú—Ôÿ¤1
