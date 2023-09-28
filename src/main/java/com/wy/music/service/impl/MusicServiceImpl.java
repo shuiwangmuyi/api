@@ -4,6 +4,7 @@ import cn.hutool.http.server.HttpServerRequest;
 import cn.hutool.http.server.HttpServerResponse;
 import com.wy.music.common.util.HttpUtil;
 import com.wy.music.common.util.PinUtil;
+import com.wy.music.common.vo.ConfValEntityVo;
 import com.wy.music.common.vo.DownVo;
 import com.wy.music.common.vo.SingerVo;
 import com.wy.music.service.MusicService;
@@ -14,6 +15,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 import org.jsoup.select.Elements;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
@@ -29,6 +31,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 
+import static com.wy.music.common.vo.ConfValEntityVo.*;
+
 /**
  * @Author:wy
  * @Date: 2023/8/30  16:31
@@ -37,6 +41,7 @@ import java.util.*;
 @Service
 @Slf4j
 public class MusicServiceImpl implements MusicService {
+
 
 
     private final static String geshouSrcUrl = "https://www.9ku.com";
@@ -48,6 +53,7 @@ public class MusicServiceImpl implements MusicService {
     @Override
     public void down(String name, HttpServerRequest request, HttpServerResponse response) throws IOException {
         // 根据名字获取英文首字母
+
         String charName = PinUtil.getFirstSpell(name);
         log.info("name:{},firstName:{}", name, charName.substring(0, 1));
         charName = charName.substring(0, 1);
@@ -168,5 +174,22 @@ public class MusicServiceImpl implements MusicService {
                 }
             }
         }
+    }
+
+
+
+
+    @Override
+    public Map test() {
+
+        Map<String,Object > map=new HashMap<>();
+        map.put("show", ConfValEntityVo.show);
+        map.put("fi",ConfValEntityVo.fi);
+        map.put("myTestConf",myTestConf);
+        map.put("myTestConf2",myTestConf2);
+
+
+        return map;
+
     }
 }

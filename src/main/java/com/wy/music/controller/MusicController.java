@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.io.IOException;
+import java.util.Map;
 
 /**
  * @Author:wy
@@ -26,12 +27,24 @@ public class MusicController {
     @Resource
     private MusicService service;
 
+    @PostMapping("impMem")
+    public String test11() {
+        System.out.println("fafafaf");
+        return "sfaffafkaf";
+    }
 
+    @PostMapping("test")
+    public Map test() {
+
+        return service.test();
+
+
+    }
 
     @PostMapping("down")
-    public void  downMusic(String name,HttpServerRequest request, HttpServerResponse response) throws IOException {
+    public void downMusic(String name, HttpServerRequest request, HttpServerResponse response) throws IOException {
 
-        service.down(name,request,response);
+        service.down(name, request, response);
 
 
     }

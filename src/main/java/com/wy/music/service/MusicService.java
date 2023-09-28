@@ -5,6 +5,7 @@ import cn.hutool.http.server.HttpServerResponse;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
+import java.util.Map;
 
 /**
  * @Author:wy
@@ -13,4 +14,6 @@ import java.io.IOException;
  */
 public interface MusicService {
     void down(String name ,HttpServerRequest request, HttpServerResponse response) throws IOException;
+
+    Map test();
 }

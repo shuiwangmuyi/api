@@ -2,18 +2,6 @@
 server:
   port: 1156
 
-
-logging:
-  level:
-    root: info # 根日志输出等级
-    com.example: debug # com.example 包下的日志输出等级
-  file:
-    name: /Users/suntao/Documents/project/LDAP/system.log # 日志输出路径
-
-#ldap后台命令所在文件
-command:
-  binFile: "/usr/local/openldap/bin"
-
-
-canSee:
-  show: false
+spring:
+  profiles:
+    active: test
