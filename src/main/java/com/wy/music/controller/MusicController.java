@@ -27,18 +27,10 @@ public class MusicController {
     @Resource
     private MusicService service;
 
-    @PostMapping("impMem")
-    public String test11() {
-        System.out.println("fafafaf");
-        return "sfaffafkaf";
-    }
 
     @PostMapping("test")
     public Map test() {
-
         return service.test();
-
-
     }
 
     @PostMapping("down")
